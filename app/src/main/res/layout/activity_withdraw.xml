@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".profit.WithdrawActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/withdraw_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_withdraw"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#800020"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:id="@+id/withdraw_detail_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appbar_withdraw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="#ffFFEBF0"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/withdraw_detail_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="3dp"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:textSize="21dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/withdraw_detail_linearlayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="55dp">
+
+            <LinearLayout
+                android:id="@+id/withdraw_graph_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="3dp"
+                    android:background="#D2FFD2"
+                    android:gravity="center"
+                    android:text="월별 결제액"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barChart_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="3dp"
+                    android:background="#D2FFD2"
+                    android:gravity="center"
+                    android:text="월별 출금액"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barChart_exchange"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="3dp"
+                    android:background="#D2FFD2"
+                    android:gravity="center"
+                    android:text="월별 상담수"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barChart_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="20dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/withdraw_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#800020"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="출금하기"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="사주 Now">
+        <menu>
+            <item
+                android:id="@+id/sidebar_company_inform"
+                android:title="공지사항" />
+            <item
+                android:id="@+id/sidebar_company_history"
+                android:title="상담내역" />
+            <item
+                android:id="@+id/sidebar_company_profit"
+                android:title="수익관리" />
+            <item
+                android:id="@+id/sidebar_company_withdraw"
+                android:title="잔금관리" />
+        </menu>
+    </item>
+
+
+    <!--사이드바 하위 메뉴에 대한 주석-->
+    <item android:title="내 계정">
+        <menu>
+            <item
+                android:id="@+id/sidebar_company_config"
+                android:title="설정" />
+            <item
+                android:id="@+id/sidebar_company_companyEditProfile"
+                android:title="역술인 정보변경" />
+            <item
+                android:id="@+id/sidebar_company_offlineSchedule"
+                android:title="오프라인 일정관리" />
+        </menu>
+    </item>
+</menu>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#AA000000"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    >
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#FFFFFF"
+        />
+
+
+        <TextView
+            android:layout_alignParentTop="true"
+        android:id="@+id/user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+            android:layout_weight="1"
+        android:textColor="#FFFFFF"
+            android:gravity="center"
+        android:text="default"
+        android:textSize="20sp"
+        />
+        <TextView
+            android:id="@+id/history_count"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:text="default"
+            android:gravity="center_vertical"
+            android:textSize="23sp"
+            />
+    
+
+
+
+
+</LinearLayout>

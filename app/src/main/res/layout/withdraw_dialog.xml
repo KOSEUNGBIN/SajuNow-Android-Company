@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/withdraw_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    card:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/withdraw_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_alignParentTop="true" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/withdraw_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/withdraw_textview"
+            android:digits="0123456789"
+            android:hint="숫자만 입력해 주세요"
+            android:textSize="15dp"
+            android:maxLength="7"
+            android:inputType="number" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/withdraw_textview_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_below="@id/withdraw_edittext" />
+
+
+        <android.support.v7.widget.ButtonBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/withdraw_textview_result"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/withdraw_btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="취소" />
+
+            <Button
+                android:id="@+id/withdraw_btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="확인" />
+        </android.support.v7.widget.ButtonBarLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
